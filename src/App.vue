@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 import Topbar from "./components/topbar/topbar.vue";
+import { registerMockServer } from "./mocks/mockServer";
+
+registerMockServer();
 </script>
 
 <template>
@@ -8,7 +11,13 @@ import Topbar from "./components/topbar/topbar.vue";
     <Topbar />
   </header>
 
-  <RouterView />
+  <div class="c-body-container">
+    <RouterView />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.c-body-container {
+  margin: 30px;
+}
+</style>
