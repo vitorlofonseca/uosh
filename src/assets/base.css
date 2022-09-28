@@ -3,8 +3,8 @@
   --white: #f4fdf7;
   --black: #08020a;
   --primary: #56c774;
-  --utils-red: #d51111;
-  --utils-green: #18b20e;
+  --utils-red: 213, 17, 17;
+  --utils-green: 24, 178, 14;
 }
 
 /* semantic color variables for this project */

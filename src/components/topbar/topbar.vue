@@ -27,7 +27,7 @@
 
   &__menu-button {
     position: absolute;
-    right: 22px;
+    right: 30px;
   }
 }
 </style>

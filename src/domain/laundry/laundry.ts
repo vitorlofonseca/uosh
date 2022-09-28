@@ -12,6 +12,14 @@ class Laundry {
   closingHour: number;
   ocuppingStatus: OcuppingStatus;
   priceCategory: PriceCategory;
+
+  formattedOperationHours(): string {
+    const formattedOpeningHour =
+      this.openingHour < 10 ? "0" + this.openingHour : this.openingHour;
+    const formattedClosingHour =
+      this.closingHour < 10 ? "0" + this.closingHour : this.closingHour;
+    return `${formattedOpeningHour}h to ${formattedClosingHour}h`;
+  }
 }
 
 export { Laundry };
