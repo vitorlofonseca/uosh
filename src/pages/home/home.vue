@@ -18,16 +18,29 @@ export default {
 </script>
 
 <template>
-  <div class="c-favorite-laundries">
+  <div class="l-section">
     <h2>Favorite Laudries</h2>
 
     <div class="l-favorite-laundries">
       <LaundryCard v-for="laundry in laundries" :laundry="laundry" />
     </div>
   </div>
+
+  <div class="l-section">
+    <h2>Nearest unbusy laundries</h2>
+
+    <img
+      class="c-laundries-map"
+      src="https://developers.google.com/static/maps/documentation/android-sdk/images/utility-markercluster.png"
+    />
+  </div>
 </template>
 
 <style scoped lang="scss">
+.l-section:not(:first-child) {
+  margin-top: 40px;
+}
+
 .l-favorite-laundries {
   display: flex;
   gap: 22px;
@@ -38,5 +51,11 @@ export default {
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+.c-laundries-map {
+  width: 100%;
+  height: 585px;
+  object-fit: cover;
 }
 </style>
