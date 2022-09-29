@@ -1,5 +1,4 @@
 <script lang="ts">
-import { store } from "@/store/store";
 import LaundryCard from "../../components/laundry-card/laundry-card.vue";
 import { useStore } from "vuex";
 import { computed } from "@vue/reactivity";
